@@ -1,6 +1,6 @@
 const express = require("express"),
 			app = express(),
-			dotenv = require("dotenv").load()
+			dotenv = require("dotenv").load(),
 			requestHeadersRouter = require("./src/routers/requestHeaders");
 
 app.use(express.static(__dirname + "/public"));
