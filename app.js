@@ -1,9 +1,11 @@
-const express= require('express');
-		  app= express();
-		  dotenv= require('dotenv').load();
+const express = require("express"),
+			app = express(),
+			dotenv = require("dotenv").load()
+			requestHeadersRouter = require("./src/routers/requestHeaders");
 
-app.use(express.static(__dirname+'/public'));
-app.use('/', express.static(__dirname+'/views'));
+app.use(express.static(__dirname + "/public"));
+app.use("/", express.static(__dirname + "/views"));
+app.use("/api/whoami", requestHeadersRouter);
 
 app.listen(process.env.SERVER_PORT);
 
