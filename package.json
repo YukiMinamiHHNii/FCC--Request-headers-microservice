@@ -1,0 +1,28 @@
+{
+  "name": "request-parser-microservice",
+  "version": "1.0.0",
+  "description": "Request headers microservice for FCC APIs and microservices certification",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YukiMinamiHHNii/FCC--Request-headers-microservice.git"
+  },
+  "keywords": [
+    "freeCodeCamp",
+    "API"
+  ],
+  "author": "YukiMinamiHHNii",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/YukiMinamiHHNii/FCC--Request-headers-microservice/issues"
+  },
+  "homepage": "https://github.com/YukiMinamiHHNii/FCC--Request-headers-microservice#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3"
+  }
+}
