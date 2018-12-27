@@ -1,0 +1,8 @@
+version: "3"
+services:
+  request-header:
+    image: request-header
+    container_name: request-header
+    restart: always
+    ports:
+      - 3003:3000
